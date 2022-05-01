@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <center>
+            <h1>  Prediction  </h1>
+            {%if data == 0%}
+            <h1>Setosa</h1>
+            <img src='static\setosa.jpg' height = 400 width = 400 />
+            {%elif data == 1%}
+            <h1>Versicolor</h1>
+            <img src='static\versicolor.jpg' height = 400 width = 400 />
+            {%else%}
+            <h1>Virginica</h1>
+            <img src='static\virginica.jpg' height = 400 width = 400 />
+            {%endif%}
+            <br><br>
+            <a href='/'>go back to home page</a>
+        </center>
+    </body>
+</html>

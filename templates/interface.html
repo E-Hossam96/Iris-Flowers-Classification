@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <center>
+            <h1> Iris Dataset Classification </h1><br><br><br><br><br>
+            <form method = "POST", action = "{{url_for('process')}}">
+                <input type = "text", name = 'sepal_length', placeholder = "Sepal Length"/> <br><br><br>
+                <input type = "text", name = 'sepal_width', placeholder = "Sepal Width"/> <br><br><br>
+                <input type = "text", name = 'patal_length', placeholder = "Patal Length"/> <br><br><br>
+                <input type = "text", name = 'patal_width', placeholder = "Patal Width"/> <br><br><br><br>
+                <input type = "submit", value = 'predict!'>
+            </form>
+        </center>
+    </body>
+</html>
