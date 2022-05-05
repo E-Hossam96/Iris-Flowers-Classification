@@ -21,6 +21,12 @@ def process():
         patal_length,
         patal_width
     ]])
+    # processing the inputs to account for missing values and errors
+    for idx, n in enumerate(input_values):
+        try:
+            float(n)
+        except:
+            input_values[idx] = 0
     output_value = model.predict(input_values)
     return render_template('result.html', data = output_value)
 
